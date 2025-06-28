@@ -21,6 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // ✅ Make addTask global so the button can use it
   window.addTask = async function () {
+    location.reload()
     const taskText = taskInput.value.trim();
     if (taskText === "") return;
 
@@ -70,4 +71,3 @@ window.addEventListener("DOMContentLoaded", () => {
     taskList.appendChild(li);
   }
 });
-
